@@ -268,6 +268,14 @@ loop:
 			}
 			if found {
 				w.Update(fw, server, cmd)
+				if true {
+					// perpen
+					w.Addr("#0,#1")
+					w.Ctl("dot=addr")
+					w.Ctl("show")
+					w.Addr("#0,#0")
+					w.Ctl("dot=addr")
+				}
 			}
 
 		case ev := <-w.event:
